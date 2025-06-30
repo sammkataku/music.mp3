@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titipdisini.co.id - Solusi Titip Barang Hemat, Praktis, & Aman</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB; /* Warna latar belakang netral */
+        }
+        /* Warna utama brand Anda (merah, bisa disesuaikan) */
+        .brand-red { color: #DC2626; }
+        .bg-brand-red { background-color: #DC2626; }
+        .border-brand-red { border-color: #DC2626; }
+
+        /* Style untuk hasil dari Gemini */
+        #hasil-estimasi {
+            white-space: pre-wrap; /* Agar format teks dari AI tetap rapi */
+            line-height: 1.6;
+        }
+        #hasil-estimasi strong {
+            color: #1F2937;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                titipdisini<span class="brand-red">.co.id</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#layanan" class="text-gray-600 hover:text-brand-red transition">Layanan</a>
+                <a href="#kalkulator" class="text-gray-600 hover:text-brand-red transition">✨ Kalkulator Cerdas</a>
+                <a href="#cara-kerja" class="text-gray-600 hover:text-brand-red transition">Cara Kerja</a>
+                <a href="#testimoni" class="text-gray-600 hover:text-brand-red transition">Testimoni</a>
+                <a href="#kontak" class="bg-brand-red text-white px-4 py-2 rounded-full font-semibold hover:bg-red-700 transition">Hubungi Kami</a>
+            </div>
+            <!-- Mobile Menu Button (opsional) -->
+            <div class="md:hidden">
+                <a href="#kontak" class="bg-brand-red text-white px-4 py-2 rounded-full font-semibold hover:bg-red-700 transition">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-white pt-20 pb-10 md:pt-32 md:pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Bayar Kos Penuh... <br class="hidden md:block">
+                    <span class="brand-red">Hanya Untuk Ruang Kosong Tanpa Penghuninya?</span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                    Kami hadir sebagai solusi cerdas untuk mahasiswa perantau di Yogyakarta. Titipkan barangmu dengan aman, praktis, dan hemat bersama kami.
+                </p>
+                <div class="mt-8">
+                    <a href="https://wa.me/6285727439940?text=Halo%20titipdisini.co.id,%20saya%20tertarik%20dengan%20layanan%20penitipan%20barang." target="_blank" class="bg-brand-red text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition shadow-lg">
+                        HUBUNGI VIA WHATSAPP
+                    </a>
+                </div>
+            </div>
+            <!-- Ganti dengan foto terbaik Anda -->
+            <div class="absolute inset-0 bg-cover bg-center z-[-1] opacity-10" style="background-image: url('https://placehold.co/1920x1080/FFFFFF/333333?text=Ganti+dengan+Foto+Kamar+Kosong+Terbaik+Anda');"></div>
+        </section>
+
+        <!-- Fitur Unggulan -->
+        <section id="fitur" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex justify-center items-center h-16 w-16 bg-red-100 rounded-full mx-auto">
+                            <!-- Ikon Koin/Hemat -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /></svg>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">HEMAT</h3>
+                        <p class="mt-2 text-gray-600">Harga jauh lebih terjangkau dibanding bayar kos penuh. Hemat biaya untuk kebutuhan lain.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex justify-center items-center h-16 w-16 bg-red-100 rounded-full mx-auto">
+                            <!-- Ikon Truk/Praktis -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">PRAKTIS</h3>
+                        <p class="mt-2 text-gray-600">Layanan lengkap dari packing, jemput, hingga antar kembali barangmu. Kamu tinggal terima beres.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex justify-center items-center h-16 w-16 bg-red-100 rounded-full mx-auto">
+                            <!-- Ikon Perisai/Aman -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944a11.955 11.955 0 0118 0c.027-.12.05-.24.072-.362a11.955 11.955 0 00-2.454-5.992z" /></svg>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">AMAN</h3>
+                        <p class="mt-2 text-gray-600">Barangmu kami simpan di lokasi yang aman dan terjaga. Kami jaga penuh amanah pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ✨ Kalkulator Cerdas dengan Gemini API -->
+        <section id="kalkulator" class="py-20 bg-red-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">✨ Kalkulator Titipan Cerdas</h2>
+                    <p class="mt-2 text-gray-600">Bingung perlu berapa kardus? Cukup tulis daftar barangmu dan biarkan AI kami membantu!</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                    <form id="form-estimasi">
+                        <div>
+                            <label for="daftar-barang" class="block text-sm font-medium text-gray-700">Tulis semua barangmu di sini (contoh: 1 koper, 2 box buku, 1 gitar, dispenser, dll)</label>
+                            <div class="mt-1">
+                                <textarea id="daftar-barang" name="daftar-barang" rows="4" class="shadow-sm focus:ring-brand-red focus:border-brand-red block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Contoh: 1 koper besar, 1 box buku sedang, 1 gitar akustik, 1 dispenser..."></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-right">
+                            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-brand-red hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-red">
+                                Estimasi Sekarang ✨
+                            </button>
+                        </div>
+                    </form>
+                    <div id="hasil-container" class="mt-6 hidden">
+                        <h3 class="text-lg font-semibold text-gray-900">Hasil Estimasi dari AI:</h3>
+                        <div id="loading" class="mt-4 hidden">
+                            <p class="text-gray-600">Sedang menghitung, harap tunggu sebentar...</p>
+                            <div class="mt-2 w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-brand-red h-2.5 rounded-full animate-pulse"></div>
+                            </div>
+                        </div>
+                        <div id="hasil-estimasi" class="mt-4 p-4 bg-gray-50 rounded-lg text-gray-700"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Cara Kerja -->
+        <section id="cara-kerja" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Cara Kerja Super Mudah</h2>
+                    <p class="mt-2 text-gray-600">Hanya dalam 3 langkah sederhana, barangmu aman bersama kami.</p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                         <div class="text-center">
+                            <div class="flex justify-center items-center h-20 w-20 bg-white border-2 border-brand-red rounded-full mx-auto shadow-lg">
+                               <span class="text-3xl font-bold brand-red">1</span>
+                            </div>
+                            <h3 class="mt-4 text-xl font-semibold">Hubungi Kami</h3>
+                            <p class="mt-2 text-gray-500">Kirim pesan via WhatsApp untuk konsultasi dan jadwal penjemputan.</p>
+                        </div>
+                        <div class="text-center">
+                           <div class="flex justify-center items-center h-20 w-20 bg-white border-2 border-brand-red rounded-full mx-auto shadow-lg">
+                               <span class="text-3xl font-bold brand-red">2</span>
+                            </div>
+                            <h3 class="mt-4 text-xl font-semibold">Jemput & Packing</h3>
+                            <p class="mt-2 text-gray-500">Tim kami akan datang ke lokasimu untuk menjemput barang. Butuh packing? Siap kami bantu!</p>
+                        </div>
+                        <div class="text-center">
+                           <div class="flex justify-center items-center h-20 w-20 bg-white border-2 border-brand-red rounded-full mx-auto shadow-lg">
+                               <span class="text-3xl font-bold brand-red">3</span>
+                            </div>
+                            <h3 class="mt-4 text-xl font-semibold">Simpan Aman</h3>
+                            <p class="mt-2 text-gray-500">Barangmu disimpan di lokasi kami yang aman. Saatnya kamu pulang kampung dengan tenang!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan & Harga -->
+        <section id="layanan" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Layanan dan Harga</h2>
+                    <p class="mt-2 text-gray-600">Pilih paket yang sesuai dengan kebutuhanmu. Transparan dan tanpa biaya tersembunyi.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Kartu Harga -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-brand-red">
+                        <h3 class="text-2xl font-bold">Paket Bulanan</h3>
+                        <p class="mt-2 text-gray-500">Sempurna untuk libur semester, magang, atau KKN.</p>
+                        <div class="mt-6 text-4xl font-extrabold">
+                           Mulai <span class="brand-red">Rp 20rb</span><span class="text-xl font-medium">/bulan</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Harga berdasarkan volume barang</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Penyimpanan di ruang tertutup</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Aman dari debu dan cuaca</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold">Layanan Tambahan</h3>
+                        <p class="mt-2 text-gray-500">Lengkapi kebutuhanmu dengan layanan ekstra dari kami.</p>
+                        <ul class="mt-10 space-y-4 text-gray-700">
+                           <li class="flex items-center font-semibold"><svg class="h-6 w-6 text-brand-red mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7l8 4"/></svg>Jasa & Material Packing</li>
+                           <li class="flex items-center font-semibold"><svg class="h-6 w-6 text-brand-red mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>Jasa Kargo (Antar-Jemput)</li>
+                           <li class="flex items-center font-semibold"><svg class="h-6 w-6 text-brand-red mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Penitipan Harian (Hubungi kami)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni -->
+        <section id="testimoni" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Apa Kata Pelanggan Kami?</h2>
+                    <p class="mt-2 text-gray-600">Kepercayaan Anda adalah prioritas utama kami.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Ganti dengan testimoni asli dari pelanggan Anda -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <p class="text-gray-600">"Pelayanannya gercep banget! Timnya ramah, barang dijemput dan diantar tepat waktu. Sangat membantu pas mau libur semesteran. Recommended!"</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="w-12 h-12 rounded-full" src="https://placehold.co/100x100/E2E8F0/4A5568?text=A" alt="Avatar pelanggan">
+                            <div class="ml-4">
+                                <p class="font-bold">Anisa Putri</p>
+                                <p class="text-sm text-gray-500">Mahasiswa UGM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <p class="text-gray-600">"Awalnya ragu, tapi ternyata aman banget. Harganya juga jauh lebih murah daripada harus bayar kos. Loyalty card-nya ide bagus!"</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="w-12 h-12 rounded-full" src="https://placehold.co/100x100/E2E8F0/4A5568?text=B" alt="Avatar pelanggan">
+                            <div class="ml-4">
+                                <p class="font-bold">Budi Santoso</p>
+                                <p class="text-sm text-gray-500">Mahasiswa UMY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <p class="text-gray-600">"Sangat profesional. Dari packing sampai penyimpanan, semuanya rapi. Ga khawatir lagi ninggal barang pas pulang kampung. Terima kasih titipdisini!"</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="w-12 h-12 rounded-full" src="https://placehold.co/100x100/E2E8F0/4A5568?text=C" alt="Avatar pelanggan">
+                            <div class="ml-4">
+                                <p class="font-bold">Citra Lestari</p>
+                                <p class="text-sm text-gray-500">Mahasiswa UPN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action (CTA) Bawah -->
+        <section id="kontak" class="bg-brand-red text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h2 class="text-3xl font-bold">Siap Pulang Kampung dengan Tenang?</h2>
+                <p class="mt-4 max-w-xl mx-auto">Jangan biarkan beban biaya kos menghalangi liburanmu. Hubungi kami sekarang dan biarkan kami yang urus barang-barangmu!</p>
+                <div class="mt-8">
+                    <a href="https://wa.me/6285727439940?text=Halo%20titipdisini.co.id,%20saya%20mau%20tanya%20tentang%20layanan%20penitipan%20barang." target="_blank" class="bg-white brand-red px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg">
+                        Tanya-tanya Dulu via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold">titipdisini.co.id</h3>
+                    <p class="mt-1 text-gray-400">Mengubah Ruang Kosong Menjadi Peluang Emas.</p>
+                    <p class="text-sm text-gray-500 mt-2">Lokasi: Bantul, Daerah Istimewa Yogyakarta</p>
+                </div>
+                <div class="mt-6 md:mt-0 flex space-x-4">
+                    <!-- Link media sosial yang sudah diperbarui -->
+                    <a href="https://www.instagram.com/titipdisini.co.id?igsh=cXkzdXVoNzBwZmh4" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z" /></svg>
+                    </a>
+                    <a href="mailto:titipdisini22@gmail.com" class="text-gray-400 hover:text-white transition">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+                <p>&copy; 2025 titipdisini.co.id oleh Tim Profit 1 M. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gemini API Logic -->
+    <script>
+        // Menangani form submission untuk kalkulator cerdas
+        const form = document.getElementById('form-estimasi');
+        const hasilContainer = document.getElementById('hasil-container');
+        const hasilEstimasiDiv = document.getElementById('hasil-estimasi');
+        const loadingDiv = document.getElementById('loading');
+        const daftarBarangTextarea = document.getElementById('daftar-barang');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Mencegah form dari reload halaman
+            
+            const daftarBarang = daftarBarangTextarea.value;
+            if (daftarBarang.trim() === '') {
+                hasilEstimasiDiv.innerHTML = '<p class="text-red-500">Mohon isi daftar barang terlebih dahulu.</p>';
+                hasilContainer.style.display = 'block';
+                loadingDiv.style.display = 'none';
+                return;
+            }
+
+            // Menampilkan loading indicator dan menyembunyikan hasil sebelumnya
+            hasilContainer.style.display = 'block';
+            loadingDiv.style.display = 'block';
+            hasilEstimasiDiv.style.display = 'none';
+            
+            try {
+                // Membuat prompt yang detail untuk Gemini
+                const prompt = `Anda adalah seorang ahli packing untuk layanan titip barang mahasiswa bernama titipdisini.co.id. Seorang mahasiswa ingin menitipkan barang dengan daftar sebagai berikut: "${daftarBarang}". 
+                
+                Berdasarkan daftar tersebut, berikan estimasi packing yang simpel dan praktis.
+                
+                Gunakan HANYA format berikut, dan JANGAN tambahkan kalimat pembuka atau penutup lainnya. Balas HANYA dalam Bahasa Indonesia:
+                
+                **Jumlah Estimasi Kardus:** [Tulis jumlah estimasi kardus, contoh: 3-4 Box]
+                
+                **Rekomendasi Ukuran:** [Tulis rekomendasi ukuran, contoh: 2 Box Besar (L) dan 1 Box Sedang (M)]
+                
+                **Tips Packing Cerdas:**
+                * [Berikan tips pertama yang relevan dengan barang, contoh: 'Gunakan pakaian atau handuk untuk membungkus barang pecah belah.']
+                * [Berikan tips kedua yang relevan, contoh: 'Untuk gitar, kendurkan senarnya sebelum dimasukkan ke dalam tas gitar untuk mengurangi tekanan.']
+                * [Berikan tips ketiga yang relevan, contoh: 'Isi ruang kosong di dalam kardus dengan kertas atau bubble wrap agar barang tidak bergeser.']`;
+
+                // Memanggil Gemini API
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Disediakan oleh Canvas secara otomatis
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                
+                // Menampilkan hasil dari Gemini
+                loadingDiv.style.display = 'none';
+                hasilEstimasiDiv.style.display = 'block';
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    
+                    const text = result.candidates[0].content.parts[0].text;
+                    // Mengganti newline menjadi tag <br> untuk tampilan HTML
+                    hasilEstimasiDiv.innerHTML = text.replace(/\n/g, '<br>');
+
+                } else {
+                    hasilEstimasiDiv.innerHTML = '<p class="text-red-500">Maaf, terjadi kesalahan saat membuat estimasi. Coba lagi nanti.</p>';
+                }
+
+            } catch (error) {
+                console.error("Error calling Gemini API:", error);
+                loadingDiv.style.display = 'none';
+                hasilEstimasiDiv.style.display = 'block';
+                hasilEstimasiDiv.innerHTML = `<p class="text-red-500">Maaf, terjadi kesalahan teknis. Silakan coba beberapa saat lagi atau hubungi kami langsung via WhatsApp.</p><p class="text-xs mt-2 text-gray-500">${error.message}</p>`;
+            }
+        });
+    </script>
+
+</body>
+</html>
